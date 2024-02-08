@@ -2,11 +2,9 @@ package gallia
 package avro
 package schema
 
-import aptus._
 import scala.collection.JavaConverters._
 import org.apache.avro.Schema.Type
 import org.apache.avro.LogicalTypes
-import gallia.reflect.BasicType._LocalDateTime
   
 // ===========================================================================
 object AvroToGalliaSchema { import AvroImplicits._  

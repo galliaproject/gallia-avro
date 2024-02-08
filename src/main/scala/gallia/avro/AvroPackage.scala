@@ -23,8 +23,8 @@ package object avro {
   type     Container = gallia.reflect.Container
   lazy val Container = gallia.reflect.Container
     
-  type     BasicType = gallia.reflect.BasicType
-  lazy val BasicType = gallia.reflect.BasicType
+  type     BasicType = meta.basic.BasicType
+  lazy val BasicType = meta.basic.BasicType
 
   // ===========================================================================
   type AvroSchema = org.apache.avro.Schema

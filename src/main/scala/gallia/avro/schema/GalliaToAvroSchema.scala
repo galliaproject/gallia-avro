@@ -105,7 +105,7 @@ object GalliaToAvroSchema { import GalliaToAvroSchemaUtils._
       case BasicType._Binary         => schema(Schema.Type.BYTES) 
 
       // ---------------------------------------------------------------------------
-      case e: BasicType._Enm         => enum(e.stringValues.asJava) }
+      case e: BasicType._Enm         => enm(e.stringValues.asJava) }
   }
 
   // ===========================================================================

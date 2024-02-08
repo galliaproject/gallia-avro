@@ -23,7 +23,7 @@ private object GalliaToAvroSchemaUtils {
 
   // ---------------------------------------------------------------------------
   def schema  (tipe   : Schema.Type)          : Schema = Schema.create(tipe)
-  def enum    (values: java.util.List[String]): Schema = Schema.createEnum (Schema.Type.ENUM .getName, PlaceHolderDoc, PlaceHolderNs, values)
+  def enm     (values: java.util.List[String]): Schema = Schema.createEnum (Schema.Type.ENUM .getName, PlaceHolderDoc, PlaceHolderNs, values)
   def fixed   (size  : Int)                   : Schema = Schema.createFixed(Schema.Type.FIXED.getName, PlaceHolderDoc, PlaceHolderNs, size)
   def nullable(schema: Schema)                : Schema = Schema.createUnion(NullSchema, schema)
   def array   (item  : Schema)                : Schema = Schema.createArray(item)
