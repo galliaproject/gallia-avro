@@ -15,8 +15,8 @@ ThisBuild / developers           := List(Developer(
   email = "contact.galliaproject@gmail.com",
   url   = url("https://github.com/anthony-cros")))
 ThisBuild / scmInfo              := Some(ScmInfo(
-  browseUrl  = url("https://github.com/galliaproject/gallia-core"),
-  connection =     "scm:git@github.com:galliaproject/gallia-core.git"))
+  browseUrl  = url("https://github.com/galliaproject/gallia-avro"),
+  connection =     "scm:git@github.com:galliaproject/gallia-avro.git"))
 
 // ===========================================================================
 lazy val root = (project in file("."))
