@@ -5,7 +5,7 @@ ThisBuild / organizationName     := "Gallia Project"
 ThisBuild / organization         := "io.github.galliaproject" // *must* match groupId for sonatype
 ThisBuild / organizationHomepage := Some(url("https://github.com/galliaproject"))
 ThisBuild / startYear            := Some(2021)
-ThisBuild / version              := "0.6.0-SNAPSHOT"
+ThisBuild / version              := "0.6.1"
 ThisBuild / description          := "A Scala library for data manipulation"
 ThisBuild / homepage             := Some(url("https://github.com/galliaproject/gallia-avro"))
 ThisBuild / licenses             := Seq("Apache 2" -> url("https://github.com/galliaproject/gallia-avro/blob/master/LICENSE"))
@@ -20,9 +20,7 @@ ThisBuild / scmInfo              := Some(ScmInfo(
 
 // ===========================================================================
 lazy val root = (project in file("."))
-  .settings(
-    name   := "gallia-avro",
-    target := baseDirectory.value / "bin" / "avro")
+  .settings(name := "gallia-avro")
   .settings(GalliaCommonSettings.mainSettings:_*)
 
 // ===========================================================================
